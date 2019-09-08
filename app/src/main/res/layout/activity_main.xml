@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff59d"
+    android:layout_height="match_parent"
+    android:paddingTop="120dp"
+    tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/btn_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forward"
+        android:textColor="@android:color/black"
+        android:theme="@style/MyButton"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btn_backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="backward"
+        android:textColor="@android:color/black"
+        android:theme="@style/MyButton"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_forward" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="left"
+        android:textColor="@android:color/black"
+        android:theme="@style/MyButton"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_backward"
+        app:layout_constraintEnd_toStartOf="@+id/btn_forward"
+        app:layout_constraintTop_toTopOf="@+id/btn_forward" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="right"
+        android:textColor="@android:color/black"
+        android:theme="@style/MyButton"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_backward"
+        app:layout_constraintStart_toEndOf="@+id/btn_forward"
+        app:layout_constraintTop_toTopOf="@+id/btn_forward" />
+
+    <Button
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="stop"
+        android:theme="@style/Stop"
+        app:layout_constraintTop_toBottomOf="@id/btn_backward" />
+
+</android.support.constraint.ConstraintLayout>
